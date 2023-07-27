@@ -13,7 +13,9 @@ class Solution():
                     dp[i][j] = True
                 elif j < i:
                     dp[i][j] = True
-        #Now we will it up for the other cases, we must build up from len 2, ... len n palindromic strings
+        #Now we will it up for the other cases, we must build up from len 2, ... len n palindromic strings, that is why 
+        #this doesn't work becauser when it encounters the final one, it looks back and finds none, we must 
+        # build up the DP table in relevant way such that all the subcases are present
         for i in range(n):
             for j in range(n):
                 if dp[i][j] == None:
