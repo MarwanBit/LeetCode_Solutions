@@ -55,3 +55,8 @@ if __name__ == "__main__":
     list2 = [7, 4, 80]
 
     print(solution.minDistance(list1, list2))
+
+    list1 = [5,7,11]
+    list2 = [3]
+
+    print(solution.minDistance(list1, list2))
